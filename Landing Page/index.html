@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial />
+    <title>Landing Page - FreeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="https://i.ibb.co/CWKpNL0/logo.png" alt="logo" />
+        </div>
+        <!-- The navbar should always be at the top of the viewport. -->
+        <nav id="nav-bar">
+            <a class="nav-link" href="#prices">Prices</a>
+            <a class="nav-link" href="#video">video</a>
+            <a class="nav-link" href="#form">form</a>
+            <!-- When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1>Consectetur vulputate nunc ultrices vestibulum</h1>
+                <h4>Diam in vulputate sed bibendum blandit purus. Amet sed molestie mus felis tincidunt mattis mi diam.</h4>
+                <div class="email-input">
+                    <input class="input-field" type="email" value="Enter your name" size="40" onfocus="this.value=''" required>
+                    <button type="button">Send</button>
+                </div>
+            </div>
+            <img class="hero-img" src="assets/imagem.png" alt="">
+        </div>
+    </div>
+
+    <div id="prices" class="container-column">
+        <h2>Cursus eget nunc scelerisque</h2>
+        <div class="container-row">
+            <div class="box">
+                <h3>Sed turpis</h3>
+                <p>Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget.</p>
+                <h4>$589</h4>
+                <img class="box-img" src="https://i.ibb.co/sm5LKHR/Rectangle-3516-1.png" alt="">
+            </div>
+            <div class="box">
+                <h3>Amet consectetur</h3>
+                <p>Aliquam faucibus purus in massa tempor nec feugiat nisl pretium.</p>
+                <h4>$380</h4>
+                <img class="box-img" src="https://i.ibb.co/ygnjyfR/Rectangle-3516-2.png" alt="">
+            </div>
+            <div class="box">
+                <h3>Proin libero</h3>
+                <p>Lectus sit amet est placerat in egestas erat imperdiet.</p>
+                <h4>$1099</h4>
+                <img class="box-img" src="https://i.ibb.co/XkmXhvf/Rectangle-3516-3.png" alt="">
+            </div>
+            <div class="box">
+                <h3>Erat nam</h3>
+                <p>Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. </p>
+                <h4>$799</h4>
+                <img class="box-img" src="https://i.ibb.co/b11V8Xv/Rectangle-3516.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-video">
+        <iframe id="video" width="728" height="409.5" src="https://www.youtube.com/embed/tI_tIZFyKBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="container-form">
+        <h1>Contact</h1>
+        <div class="form">
+            <form id="form" action="https://www.freecodecamp.com/email-submit)">
+                <div class="form-div">
+                    <label id="name-label">
+                    <p>Name</p>
+                    </label>
+                    <input type="text" name="name" id="name" class="input-form" placeholder="Enter your name" size="40" onfocus="this.value=''" required /><br><br>
+                </div>
+
+                <div class="form-div">
+                    <label id="email-label"><p>Email</p></label>
+                    <input class="input-form" type="email" id="email" name="email" placeholder="name@email.com" onfocus="this.value=''" required><br><br>
+                </div>
+
+                <input class="submit-button" id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
