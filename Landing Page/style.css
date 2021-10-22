@@ -302,7 +302,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 32px 0px;
+    margin: 32px 0;
     color: var(--light-text);
 }
 
@@ -346,7 +346,6 @@ button {
         flex-direction: column;
     }
     h1 {
-        font-size: auto;
         overflow: auto;
     }
     .nav-link {
