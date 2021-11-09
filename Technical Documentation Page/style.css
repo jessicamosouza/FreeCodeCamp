@@ -1,0 +1,114 @@
+html,
+body {
+    min-width: 360px;
+    color: #464646;
+    background-color: #f7f7f7;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    max-width: 300px;
+    border-right: solid 2px;
+    border-color: #464646;
+}
+
+nav header {
+    margin: 10px;
+    text-align: center;
+    color: rgb(49, 49, 49);
+}
+
+nav ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav li {
+    list-style: none;
+    border-top: solid 1px;
+    padding: 16px 32px;
+    color: #2c2c2c;
+}
+
+nav a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    position: absolute;
+    margin-left: 348px;
+    margin-right: 24px;
+}
+
+article {
+    color: rgb(87, 87, 87);
+    font-weight: 300;
+    margin: 16px;
+}
+
+article h1 {
+    color: rgb(49, 49, 49);
+}
+
+article li {
+    margin: 8px 24px;
+}
+
+code {
+    display: block;
+    background-color: rgb(221, 221, 221);
+    padding: 16px 32px;
+    white-space: pre-line;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    nav ul {
+        border: 1px solid;
+        height: 207px;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    main {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        margin-left: -10px;
+    }
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}

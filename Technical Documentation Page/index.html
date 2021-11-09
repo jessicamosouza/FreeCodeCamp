@@ -1,21 +1,30 @@
 <html>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="rgba(255, 255, 255, .3)" />
+    <meta name="description" content="JS Documentation - FreeCodeCamp Project">
+    <title>JS Documentation | FreeCodeCamp Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
     <!-- On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
     <nav id="navbar">
         <header>
-            <h4>JS Documentation</h4>
+            <h1>JS Documentation</h1>
         </header>
         <ul>
             <li><a class="nav-link" href="#Introduction">Introduction</a></li>
             <li>
-                <a class="nav-link" href="#What you shoul already know">What you shoul already know</a>
+                <a class="nav-link" href="#What_you_shoul_already_know">What you shoul already know</a>
             </li>
             <li>
-                <a class="nav-link" href="#JavaScript and Java">JavaScript and Java</a>
+                <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
             </li>
             <li>
-                <a class="nav-link" href="#Hello World">Hello World</a>
+                <a class="nav-link" href="#Hello_World">Hello World</a>
             </li>
             <li>
                 <a class="nav-link" href="#Variables">Variables</a>
@@ -27,28 +36,28 @@
                 <a class="nav-link" href="#Variable scope">Variable scope</a>
             </li>
             <li>
-                <a class="nav-link" href="#Declaring variables">Declaring variables</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#Global variables">Global variables</a>
+                <a class="nav-link" href="#Global_variables">Global variables</a>
             </li>
             <li>
                 <a class="nav-link" href="#Constants">Constants</a>
             </li>
             <li>
-                <a class="nav-link" href="#Data types">Data types</a>
+                <a class="nav-link" href="#Data_types">Data types</a>
             </li>
             <li>
-                <a class="nav-link" href="#if...else statement">if...else statement</a>
+                <a class="nav-link" href="#if_else_statement">if...else statement</a>
             </li>
             <li>
-                <a class="nav-link" href="#while statement">while statement</a>
+                <a class="nav-link" href="#while_statement">while statement</a>
             </li>
             <li>
-                <a class="nav-link" href="#Function declarations">Function declarations</a>
+                <a class="nav-link" href="#Function_declarations">Function declarations</a>
             </li>
             <li>
                 <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Made_By">Made By</a>
             </li>
 
         </ul>
@@ -74,7 +83,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="What you shoul already know">
+        <section class="main-section" id="What_you_shoul_already_know">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>What you shoul already know</h1>
@@ -89,7 +98,7 @@
                 </ul>
             </article>
         </section>
-        <section class="main-section" id="JavaScript and Java">
+        <section class="main-section" id="JavaScript_and_Java">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>JavaScript and Java</h1>
@@ -104,7 +113,7 @@
                     interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
             </article>
         </section>
-        <section class="main-section" id="Hello World">
+        <section class="main-section" id="Hello_World">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>Hello World</h1>
@@ -131,7 +140,7 @@
                 <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
             </article>
         </section>
-        <section class="main-section" id="Declaring variables">
+        <section class="main-section" id="Declaring_variables">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>Declaring variables</h1>
@@ -164,7 +173,7 @@
                 <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</code>
             </article>
         </section>
-        <section class="main-section" id="Global variables">
+        <section class="main-section" id="Global_variables">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>Global variables</h1>
@@ -187,15 +196,15 @@
                 <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
                 <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
                 <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
-                <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-                    CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL CAUSE AN ERROR ALSO 
+                function f() { const g = 5; var g; //statements
                     }
                 </code>
                 <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
                 <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
             </article>
         </section>
-        <section class="main-section" id="Data types">
+        <section class="main-section" id="Data_types">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>Data types</h1>
@@ -221,7 +230,7 @@
                     for values, and functions as procedures that your application can perform.</p>
             </article>
         </section>
-        <section class="main-section" id="if...else statement">
+        <section class="main-section" id="if_else_statement">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>if...else statement</h1>
@@ -247,7 +256,7 @@
                 <code>if ((x = y)) { /* statements here */ }</code>
             </article>
         </section>
-        <section class="main-section" id="while statement">
+        <section class="main-section" id="while_statement">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>while statement</h1>
@@ -273,7 +282,7 @@
             <p>After completing the third pass, the condition n
                 < 3 is no longer true, so the loop terminates.</p>
         </section>
-        <section class="main-section" id="Function declarations">
+        <section class="main-section" id="Function_declarations">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>Function declarations</h1>
@@ -302,7 +311,7 @@
                 All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>
             </article>
         </section>
-        <section class="main-section" id="Made by">
+        <section class="main-section" id="Made_By">
             <header>
                 <!-- text that describes the topic of that section -->
                 <h1>Made by</h1>
